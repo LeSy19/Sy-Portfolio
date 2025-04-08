@@ -5,6 +5,10 @@ import HeroLeft from '../sections/hero/hero.left';
 import HeroRight from '../sections/hero/hero.right';
 import ResizeButton from '../sections/resize.button';
 import { MdFileDownload } from 'react-icons/md';
+import Divider from '../sections/divider';
+import Introduction from '../sections/introduction';
+import Experience from '../sections/experience';
+import Skills from '../sections/skills';
 
 const HomePage = () => {
     return (
@@ -38,6 +42,25 @@ const HomePage = () => {
                             />
                         </Col>
                     </Row>
+                </Container>
+            </section>
+
+            <section className="mt-md-7 mt-2">
+                <Container>
+                    <Introduction />
+                </Container>
+
+            </section>
+            <Divider />
+            <section className="mt-md-7 mt-2">
+                <Container>
+                    <Experience />
+                </Container>
+            </section>
+            <Divider />
+            <section className='mt-md-7 mt-2'>
+                <Container>
+                    <Skills />
                 </Container>
             </section>
         </div>

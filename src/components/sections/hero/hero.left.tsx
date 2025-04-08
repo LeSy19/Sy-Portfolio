@@ -4,7 +4,6 @@ import { APP_DATA } from "../../helpers/data";
 import ResizeButton from "../resize.button";
 import { AiFillFire } from "react-icons/ai";
 import { MdFileDownload } from "react-icons/md";
-import './../../styles/animation.scss';
 
 const HeroLeft = () => {
     return (

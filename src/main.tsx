@@ -4,6 +4,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import './components/styles/global.scss';
 import Layout from './layout.tsx';
 import HomePage from './components/pages/home.tsx';
 import ProjectPage from './components/pages/project.tsx';
