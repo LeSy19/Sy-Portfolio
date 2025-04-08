@@ -1,6 +1,10 @@
 import Typewriter from "typewriter-effect";
 import SocialMedia from "../social.media";
 import { APP_DATA } from "../../helpers/data";
+import ResizeButton from "../resize.button";
+import { AiFillFire } from "react-icons/ai";
+import { MdFileDownload } from "react-icons/md";
+import './../../styles/animation.scss';
 
 const HeroLeft = () => {
     return (
@@ -31,6 +35,39 @@ const HeroLeft = () => {
                 mail={APP_DATA.EMAIL_URL}
                 facebook={APP_DATA.FACEBOOK_URL}
             />
+            <div className="d-md-flex d-none gap-4">
+                <ResizeButton
+                    btnText="My Skill"
+                    btnIcons={<AiFillFire size={18} color="orange" />}
+                    btnStyle={{
+                        border: "1px solid #444",
+                        padding: "10px 24px",
+                        borderRadius: "50px",
+                        fontWeight: 500,
+                        display: "flex",
+                        alignItems: "center",
+                        transition: "all 0.3s ease",
+                        gap: 3
+                    }}
+                />
+
+                <ResizeButton
+                    btnText="Get CV"
+                    btnIcons={<MdFileDownload size={18} />}
+                    btnStyle={{
+                        border: "1px solid #444",
+                        padding: "10px 24px",
+                        borderRadius: "50px",
+                        fontWeight: 500,
+                        display: "flex",
+                        alignItems: "center",
+                        transition: "all 0.3s ease",
+                        gap: 6
+                    }}
+                />
+
+
+            </div>
         </div>
     )
 }

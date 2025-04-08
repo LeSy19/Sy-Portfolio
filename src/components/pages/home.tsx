@@ -4,6 +4,7 @@ import bg from '../../assets/section.svg';
 import HeroLeft from '../sections/hero/hero.left';
 import HeroRight from '../sections/hero/hero.right';
 import ResizeButton from '../sections/resize.button';
+import { MdFileDownload } from 'react-icons/md';
 
 const HomePage = () => {
     return (
@@ -19,7 +20,7 @@ const HomePage = () => {
                     zIndex: 0
                 }}>
             </div>
-            <section>
+            <section className="mt-md-7 mt-2" >
                 <Container
                     style={{ position: "relative" }}
                 >
@@ -33,7 +34,7 @@ const HomePage = () => {
                         <Col xs={12} className="d-md-none d-flex mt-4 justify-content-center">
                             <ResizeButton
                                 btnText="My Skill"
-                            // btnIcons={<MdFileDownload />}
+                                btnIcons={<MdFileDownload />}
                             />
                         </Col>
                     </Row>
