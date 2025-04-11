@@ -4,8 +4,22 @@ import { APP_DATA } from "../../helpers/data";
 import ResizeButton from "../resize.button";
 import { AiFillFire } from "react-icons/ai";
 import { MdFileDownload } from "react-icons/md";
+import { useTranslation } from "react-i18next";
 
-const HeroLeft = () => {
+interface IProps {
+    scrollToSKill: () => void;
+}
+const HeroLeft = (props: IProps) => {
+    const { t } = useTranslation();
+
+    const openInNewTab = (url: string): void => {
+        const newWindow = window.open(url, '_blank', 'noopener,noreferrer')
+        if (newWindow) newWindow.opener = null
+    }
+    const handleDownloadCV = () => {
+        openInNewTab("https://drive.google.com/file/d/1lRWAeKNS5BWsO48PjbiAhfHTxn0PNOGq/view?usp=sharing")
+    }
+
     return (
         <div className="hero-left">
             <h3>
@@ -36,33 +50,20 @@ const HeroLeft = () => {
             />
             <div className="d-md-flex d-none gap-4">
                 <ResizeButton
-                    btnText="My Skill"
+                    onClick={props.scrollToSKill}
+                    btnText={t("heroSection.exp")}
                     btnIcons={<AiFillFire size={18} color="orange" />}
                     btnStyle={{
-                        border: "1px solid #444",
-                        padding: "10px 24px",
-                        borderRadius: "50px",
-                        fontWeight: 500,
-                        display: "flex",
-                        alignItems: "center",
-                        transition: "all 0.3s ease",
-                        gap: 3
+                        background: "unset",
+                        border: "1px solid var(--border-hero-right)",
+                        color: "var(--text-white-1)",
                     }}
                 />
 
                 <ResizeButton
-                    btnText="Get CV"
+                    btnText={t("heroSection.cv")}
                     btnIcons={<MdFileDownload size={18} />}
-                    btnStyle={{
-                        border: "1px solid #444",
-                        padding: "10px 24px",
-                        borderRadius: "50px",
-                        fontWeight: 500,
-                        display: "flex",
-                        alignItems: "center",
-                        transition: "all 0.3s ease",
-                        gap: 6
-                    }}
+                    onClick={handleDownloadCV}
                 />
 
 

@@ -10,9 +10,14 @@ $spacers: (
     7: $spacer * 5,
 );
 // @use url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
-@use 'bootstrap/scss/bootstrap';
-@use './animation.scss';
-@use "./variable.scss";
+@import 'bootstrap/scss/bootstrap';
+@import './animation.scss';
+@import "./variable.scss";
+
+// html,
+// body {
+//     scroll-behavior: smooth !important;
+// }
 
 
 * {

@@ -1,5 +1,4 @@
 import './hero.scss';
-
 const HeroRight = () => {
 
     return (

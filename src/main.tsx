@@ -6,35 +6,32 @@ import {
 } from "react-router-dom";
 import './components/styles/global.scss';
 import Layout from './layout.tsx';
-import HomePage from './components/pages/home.tsx';
-import ProjectPage from './components/pages/project.tsx';
-import AboutPage from './components/pages/about.tsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import '../i18n.ts';
 
+import smoothscroll from 'smoothscroll-polyfill';
+import { AppContextProvider } from './components/context/app.context.tsx';
+
+// Kick off the polyfill
+smoothscroll.polyfill();
+
+// Lấy theme từ localStorage hoặc mặc định là "light"
+const savedTheme = localStorage.getItem("theme") || "dark";
+// Gán theme ngay từ đầu cho <html>
+document.documentElement.setAttribute("data-bs-theme", savedTheme);
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Layout />,
-    children: [
-      {
-        index: true,
-        element: <HomePage />,
-      },
-      {
-        path: "/project",
-        element: <ProjectPage />,
-      },
-      {
-        path: "/about",
-        element: <AboutPage />,
-      },
-    ],
+
   },
 ]);
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <AppContextProvider>
+      <RouterProvider router={router} />
+    </AppContextProvider>
   </StrictMode>,
 )

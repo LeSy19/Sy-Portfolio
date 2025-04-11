@@ -1,0 +1,43 @@
+{
+    "appHeader": {
+        "home": "Trang chủ",
+        "experience": "Kinh nghiệm",
+        "project": "Dự án cá nhân",
+        "contact": "Liên hệ"
+    },
+    "heroSection": {
+        "exp": "Kỹ năng",
+        "cv": "Tải CV"
+    },
+    "introSection": {
+        "header1": "Tôi là một sinh viên vừa tốt nghiệp ngành Phát triển phần mềm tại trường Cao đẳng FPT Polytechnic với GPA 3.7/4.",
+        "header2": "Trong suốt quá trình học, tôi đã làm quen và thực hành nhiều với",
+        "and": "và",
+        "header3": "Tôi yêu thích việc xây dựng các sản phẩm thực tế và luôn sẵn sàng học hỏi những công nghệ mới.",
+        "header4": " Mục tiêu của tôi là trở thành một lập trình viên fullstack có thể tạo ra những giải pháp hữu ích cho người dùng."
+    },
+    "expSection": {
+        "title": "Kinh nghiệm"
+    },
+    "projectSection": {
+        "title": "Dự án cá nhân",
+        "title2": "Dưới đây là 1 số dự án cá nhân tôi đã làm",
+        "projects": {
+            "1": {
+                "technology": "Công nghệ: Java Spring Boot, JPA, Spring Security, OAuth2, RESTFul APIs, Swagger, Gmail Service.",
+                "description": "Career Connect là nền tảng giúp kết nối nhanh chóng giữa doanh nghiệp và ứng viên, hỗ trợ tuyển dụng hiệu quả và tìm việc dễ dàng. Hệ thống cho phép đăng tin tuyển dụng, tạo hồ sơ ứng viên, và tìm kiếm đối tác phù hợp chỉ trong vài bước."
+            },
+            "2": {
+                "technology": "Công nghệ: Java Spring Boot, JPA, Spring Security, OAuth2, RESTFul API, ReactJs, Html, Css, MySQL, Swagger.",
+                "description": "Website cho phép người dùng mua laptop trực tiếp. Hỗ trợ đăng ký tài khoản, đặt hàng, thanh toán trực tuyến và theo dõi lịch sử mua hàng. Quản trị viên có thể quản lý khách hàng, thương hiệu, danh mục và xem thống kê."
+            },
+            "3": {
+                "technology": "Công nghệ: Java Spring Boot, Spring Security, Thymeleaf, RESTful API, AngularJS, Bootstrap 5, Spring MVC, SQL Server",
+                "description": "Nền tảng bán phụ kiện trực tuyến. Gồm cả vai trò người dùng và quản trị với các quyền hạn. Có chức năng thêm, xóa và chỉnh sửa sản phẩm."
+            }
+        }
+    },
+    "skillSection": {
+        "title": "Kỹ năng"
+    }
+}

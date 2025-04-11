@@ -1,9 +1,11 @@
-
+import laptopShop from '../../assets/project/laptop-shop.png';
+import SpringRest from '../../assets/project/spring-rest.png';
+import detailWebsite from '../../assets/project/detail-website.png';
 
 export const APP_DATA = {
-    GITHUB_URL: "https://www.youtube.com/@hoidanit",
-    EMAIL_URL: "https://www.youtube.com/@hoidanit",
-    FACEBOOK_URL: "https://www.facebook.com/askITwithERIC/"
+    GITHUB_URL: "https://github.com/LeSy19/",
+    EMAIL_URL: "https://mail.google.com/mail/u/1/#inbox/",
+    FACEBOOK_URL: "https://www.facebook.com/le.sy.1690/"
 };
 
 
@@ -11,15 +13,15 @@ export const EXPERIENCES = [
     {
         id: 1,
         title: {
-            vi: "Lập Trình Viên",
+            vi: "Thực tập sinh phát triển Java",
             en: "Java Developer Intern"
         },
         company: {
-            vi: "Công ty ABCXYZ Ltd.",
-            en: "Wisdom Engineering And Bussiness Solution"
+            vi: "Công ty Wisdom Engineering And Bussiness",
+            en: "Wisdom Engineering And Bussiness Solution Company"
         },
         duration: {
-            vi: "Jan 2024 - Hiện tại",
+            vi: "9 2024 - 12 2024",
             en: "Sep 2024 - Dec 2024"
         }
     },
@@ -37,8 +39,31 @@ export const SKILLS_DATA = [
     'Typescript',
     'React',
     'MySQL',
+    'SQL Server',
     'Git',
     'Bootstrap',
     'Figma',
-    'MaterialUI',
+]
+
+
+
+export const PROJECTS = [
+    {
+        id: 1,
+        imgPath: SpringRest,
+        title: "Career Connect",
+        githubLink: "https://github.com/LeSy19/career-connect",
+    },
+    {
+        id: 2,
+        imgPath: laptopShop,
+        title: "Laptop Shop Website",
+        githubLink: "https://github.com/LeSy19/LaptopShop",
+    },
+    {
+        id: 3,
+        imgPath: detailWebsite,
+        title: "ACCESSORY RETAIL WEBSITE",
+        githubLink: " https://github.com/LeSy19/WebBanPhuKien",
+    }
 ]

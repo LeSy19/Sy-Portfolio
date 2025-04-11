@@ -1,0 +1,43 @@
+{
+    "appHeader": {
+        "home": "Home",
+        "experience": "Experience",
+        "project": "Project",
+        "contact": "Contact"
+    },
+    "heroSection": {
+        "exp": "My Skill",
+        "cv": "Get CV"
+    },
+    "introSection": {
+        "header1": "I am a recent graduate in Software Development from FPT Polytechnic College with a GPA of 3.7/4.",
+        "header2": "Throughout my studies, I became familiar with and practiced a lot with",
+        "and": "and",
+        "header3": "I enjoy building real-world products and am always eager to learn new technologies",
+        "header4": "My goal is to become a full-stack developer who can create useful solutions for users."
+    },
+    "expSection": {
+        "title": "Experience"
+    },
+    "projectSection": {
+        "title": "Personal Project",
+        "title2": "Here are a few personal projects I've worked",
+        "projects": {
+            "1": {
+                "technology": "Technologies: Java Spring Boot, JPA, Spring Security, OAuth2, RESTFul APIs, Swagger, Gmail Service.",
+                "description": "Career Connect is a platform that connects businesses and candidates quickly, helping efficient recruitment and job hunting. The system allows posting job ads, creating candidate profiles, and finding matching partners in just a few steps."
+            },
+            "2": {
+                "technology": "Technologies: Java Spring Boot, JPA, Spring Security, OAuth2, RESTFul API, ReactJs, Html, Css, MySQL, Swagger.",
+                "description": "A website that allows users to purchase laptops directly. Supports user registration, shopping functionalities, online payment, and order history tracking. The administrator role enables managing customers, brands, categories, and viewing statistics."
+            },
+            "3": {
+                "technology": "Technologies: Java Spring Boot, Spring Security, Thymeleaf, RESTful API, AngularJS, Bootstrap 5, Spring MVC, SQL Server",
+                "description": "Online accessory sales platform. Includes user and admin roles with permissions. Features for adding, deleting, and editing products."
+            }
+        }
+    },
+    "skillSection": {
+        "title": "SKills"
+    }
+}
