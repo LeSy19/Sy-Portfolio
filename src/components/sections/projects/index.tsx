@@ -3,11 +3,9 @@ import { Col, Row } from "react-bootstrap";
 import ProjectCard from "./project.card";
 import { useTranslation } from "react-i18next";
 
-type TLanguage = "vi" | "en";
 const ProjectPage = () => {
-    const { t, i18n } = useTranslation();
+    const { t } = useTranslation();
 
-    const currentLanguage = (i18n.resolvedLanguage) as TLanguage;
     return (
         <>
             <Row>

@@ -1,6 +1,5 @@
 import { Col, Row } from "react-bootstrap";
 import Tilt from 'react-parallax-tilt';
-import AvtIntro from '../../../assets/avatar.svg';
 import SyAvt from "./../../../assets/project/sy.png";
 import { useTranslation } from "react-i18next";
 const Introduction = () => {

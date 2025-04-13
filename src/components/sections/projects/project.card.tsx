@@ -1,6 +1,5 @@
 import { Button, Card } from "react-bootstrap";
 import { BsGithub } from "react-icons/bs";
-import { CgWebsite } from "react-icons/cg";
 
 
 interface IProps {
