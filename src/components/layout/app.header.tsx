@@ -47,9 +47,16 @@ function AppHeader(props: IProps) {
             style={{ zIndex: 1000 }}
         >
             <Container>
-                <Navbar.Brand href="#home"
-                    style={{ color: "green" }}
-                >Sy - Portfolio
+                <Navbar.Brand
+                    href="#home"
+                    style={{
+                        fontWeight: "bold",
+                        background: "linear-gradient(90deg, #00ff99, #0066ff)",
+                        WebkitBackgroundClip: "text",
+                        WebkitTextFillColor: "transparent"
+                    }}
+                >
+                    PORTFOLIO
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
