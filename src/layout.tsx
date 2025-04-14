@@ -13,6 +13,7 @@ import Skills from "./components/sections/skills";
 import { useRef } from "react";
 import scrollToElement from "scroll-to-element";
 import bg from './assets/top-bg.svg';
+import FadeInWhenVisible from "./components/context/FadeInWhenVisible";
 
 const Layout = () => {
   const skillRef = useRef<HTMLElement>(null);
@@ -74,6 +75,7 @@ const Layout = () => {
                   scrollToSKill={scrollToSKill}
                 />
               </Col>
+
               <Col md={6}>
                 <HeroRight />
               </Col>
@@ -89,31 +91,41 @@ const Layout = () => {
 
         <section className="mt-md-7 mt-2">
           <Container>
-            <Introduction />
+            <FadeInWhenVisible delay={0.4}>
+              <Introduction />
+            </FadeInWhenVisible>
           </Container>
 
         </section>
         <Divider />
         <section className="mt-md-7 mt-2" ref={expRef}>
           <Container>
-            <Experience />
+            <FadeInWhenVisible direction="up" delay={0.4}>
+              <Experience />
+            </FadeInWhenVisible>
           </Container>
         </section>
         <Divider />
         <section className="mt-md-7 mt-2" ref={projectRef}>
           <Container>
-            <ProjectPage />
+            <FadeInWhenVisible delay={0.4}>
+              <ProjectPage />
+            </FadeInWhenVisible>
           </Container>
         </section>
         <Divider />
         <section ref={skillRef}>
           <Container >
-            <Skills />
+            <FadeInWhenVisible delay={0.4}>
+              <Skills />
+            </FadeInWhenVisible>
           </Container>
         </section>
       </div>
       <section ref={aboutRef}>
-        <AppFooter />
+        <FadeInWhenVisible delay={0.4}>
+          <AppFooter />
+        </FadeInWhenVisible>
       </section>
 
     </>

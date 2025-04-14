@@ -55,6 +55,7 @@ function AppHeader(props: IProps) {
                         WebkitBackgroundClip: "text",
                         WebkitTextFillColor: "transparent"
                     }}
+                    onClick={() => scrollToSection(homeRef)}
                 >
                     PORTFOLIO
                 </Navbar.Brand>
@@ -76,7 +77,7 @@ function AppHeader(props: IProps) {
                             onClick={() => scrollToSection(aboutRef)}
                         > {t("appHeader.contact")}</Nav.Link>
                     </Nav>
-                    <Nav className="ms-auto align-items-center">
+                    <Nav className="ms-auto gap-2">
                         <div className='nav-link' style={{ cursor: "pointer" }}>
                             {theme === "light" ?
                                 <MdOutlineLightMode

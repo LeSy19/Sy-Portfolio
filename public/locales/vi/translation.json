@@ -39,5 +39,11 @@
     },
     "skillSection": {
         "title": "Kỹ năng"
+    },
+    "footer": {
+        "title": "LIÊN HỆ TÔI",
+        "phone": "Số điện thoại",
+        "address": "Địa chỉ",
+        "hcmCity": "Thành phố Hồ Chí Minh"
     }
 }

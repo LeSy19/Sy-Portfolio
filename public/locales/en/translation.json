@@ -39,5 +39,11 @@
     },
     "skillSection": {
         "title": "SKills"
+    },
+    "footer": {
+        "title": "CONTACT ME",
+        "phone": "Phone number",
+        "address": "Address",
+        "hcmCity": "Ho Chi Minh City"
     }
 }

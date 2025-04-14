@@ -3,8 +3,10 @@ import Lottie from "lottie-react";
 import emailLottie from '../../assets/lottie/email.json';
 import SocialMedia from "../sections/social.media";
 import { APP_DATA } from "../helpers/data";
+import { useTranslation } from "react-i18next";
 
 const AppFooter = () => {
+    const { t } = useTranslation();
     return (
         <Container>
             <div
@@ -22,15 +24,15 @@ const AppFooter = () => {
                 <Row className="align-items-center ">
                     <Col md={6}>
                         <div style={{ marginBottom: "1rem" }}>
-                            <h2 style={{ marginBottom: "8px" }}>CONTACT ME</h2>
+                            <h2 style={{ marginBottom: "8px" }}>{t("footer.title")}</h2>
                             <p style={{ marginBottom: "8px" }}>
                                 <strong>Email:</strong> sydev191@gmail.com
                             </p>
                             <p style={{ marginBottom: "8px" }}>
-                                <strong>Phone:</strong> 0905008230
+                                <strong>{t("footer.phone")}:</strong> 0905008230
                             </p>
                             <p style={{ marginBottom: "8px" }}>
-                                <strong>Address:</strong> Thành phố Hồ Chí Minh
+                                <strong>{t("footer.address")}:</strong> {t("footer.hcmCity")}
                             </p>
                         </div>
                         <SocialMedia
