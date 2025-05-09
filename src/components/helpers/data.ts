@@ -17,12 +17,12 @@ export const EXPERIENCES = [
             en: "Java Developer Intern"
         },
         company: {
-            vi: "Công ty Wisdom Engineering And Bussiness",
+            vi: "Công ty Wisdom Engineering And Bussiness Solution",
             en: "Wisdom Engineering And Bussiness Solution Company"
         },
         duration: {
-            vi: "9 2024 - 12 2024",
-            en: "Sep 2024 - Dec 2024"
+            vi: "9 2024 - 3 2025",
+            en: "Sep 2024 - Mar 2025"
         }
     },
 
